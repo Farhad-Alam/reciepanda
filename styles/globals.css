@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600&display=swap");
+
+@layer components {
+  .scale-anim {
+    @apply cursor-pointer active:scale-90 duration-300;
+  }
+  .catButton {
+    @apply flex flex-col items-center space-y-1 justify-center text-xs w-[4rem] h-[4rem] md:w-[4.4rem] md:h-[4.4rem] rounded-full bg-orange-400 p-2 text-gray-700 font-pociFico space-x-2;
+  }
+  .InsButton {
+    @apply bg-gray-800 font-mono text-gray-300 py-2 px-4 rounded-lg font-semibold tracking-wider border-2 border-black scale-anim hover:bg-white hover:text-black duration-300;
+  }
+}

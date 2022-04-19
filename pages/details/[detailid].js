@@ -31,7 +31,7 @@ export default Detail;
 
 export async function getServerSideProps({ query }) {
   const { detailid } = query;
-  console.log(detailid);
+
 
   const res = await fetch(
     `https://api.spoonacular.com/recipes/${detailid}/information?apiKey=${process.env.API_KEY}`

@@ -8,18 +8,18 @@ const DetailSec = ({ results }) => {
     return str.length > n ? str.substr(0, n - 1) : str;
   }
   return (
-    <div className="flex flex-col sm:flex-row space-y-10 p-5 space-x-10 mt-20">
+    <div className="grid sm:grid-cols-2 space-y-10 p-5 sm:space-x-10 mt-20">
       {/* Left */}
-      <div className="space-y-4 font-pociFico ">
-        <h2>{results.title}</h2>
+      <div className="font-pociFico ">
+        <h2 className="text-lg sm:text-xl" >{results.title}</h2>
         <div className="">
           <Image
             src={results.image}
-            layout="fixed"
-            width={380}
-            height={250}
-            objectFit="cover"
-            className="rounded-xl "
+            layout="responsive"
+            width={200}
+            height={200}
+            objectFit="contain"
+            className="rounded-xl"
           />
         </div>
       </div>

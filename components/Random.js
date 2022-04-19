@@ -53,7 +53,7 @@ const Random = () => {
                 }
                 alt=""
               />
-              <h2 className="text-lg sm:text-xl sm:whitespace-nowrap absolute font-semibold tracking-wide text-gray-50 top-[50%] sm:top-[30%] left-[50%] z-10 translate-x-[-50%] translate-y-[-50%]">
+              <h2 className="text-base tracking-wider sm:text-xl sm:whitespace-nowrap absolute font-semibold text-gray-50 top-[50%] sm:top-[30%] left-[50%] z-10 translate-x-[-50%] translate-y-[-50%]">
                 {item.title}
               </h2>
               <p className="hidden sm:block absolute text-sm text-center text-gray-300 z-20 top-[40%] left-[50%]  translate-x-[-50%] w-[70%]">
